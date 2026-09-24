@@ -2,22 +2,21 @@ package main
 
 import "fmt"
 
-// Función para sumar dos números
 func suma(a, b int) int {
 	return a + b
 }
 
-// Función para saludar de forma general
+
 func saludar() {
 	fmt.Println("¡Hola! Qué bueno verte por aquí.")
 }
 
-// Función de bienvenida personalizada
+
 func bienvenida(nombre string) {
 	fmt.Printf("Bienvenido/a, %s.\n", nombre)
 }
 
-// Ejemplo de función variádica (recibe múltiples argumentos)
+
 func mostrarNum(numeros ...int) {
 	fmt.Println("Números variádicos recibidos:")
 	for _, n := range numeros {
@@ -44,7 +43,6 @@ func main() {
 
 	fmt.Println("El resultado de tu suma es:", suma(a, b))
 
-	// Probando la función variádica
 	fmt.Println("")
 	mostrarNum(1, 2, 3, 4, 5)
 }
