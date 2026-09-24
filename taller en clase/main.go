@@ -106,7 +106,7 @@ func opcion3() {
 
 	fahrenheit := (celsius * 9 / 5) + 32
 	fmt.Printf("%.2f°C equivalen a %.2f°F\n", celsius, fahrenheit)
-}
+}/ Opción 4: Fahrenheit a Celsius
 
 
 func opcion4() {
