@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Función principal con el menú
+
 func main() {
 	var opcion string
 
@@ -38,9 +38,7 @@ func main() {
 	}
 }
 
-// --- FUNCIONES DE CADA OPCIÓN ---
 
-// Opción 1: Notas de estudiantes
 func opcion1() {
 	var n int
 	fmt.Print("Ingresa la cantidad de estudiantes: ")
@@ -62,14 +60,14 @@ func opcion1() {
 	promedio := averageGrade(suma, n)
 	fmt.Printf("\nEl promedio del curso es: %.2f\n", promedio)
 
-	// Validar con if si está aprobado o reprobado
+	
 	if promedio >= 70 {
 		fmt.Println("Estado: APROBADO")
 	} else {
 		fmt.Println("Estado: REPROBADO")
 	}
 
-	// Mostrar mensaje con switch de acuerdo al rango
+	
 	switch {
 	case promedio >= 90 && promedio <= 100:
 		fmt.Println("Rendimiento: Excellent performance")
@@ -82,12 +80,12 @@ func opcion1() {
 	}
 }
 
-// Función auxiliar para calcular el promedio (Opción 1)
+
 func averageGrade(suma float64, cantidad int) float64 {
 	return suma / float64(cantidad)
 }
 
-// Opción 2: Suma de 1 a n
+
 func opcion2() {
 	var n int
 	fmt.Print("Ingresa un número (n): ")
@@ -100,7 +98,7 @@ func opcion2() {
 	fmt.Printf("La suma del 1 al %d es: %d\n", n, suma)
 }
 
-// Opción 3: Celsius a Fahrenheit
+
 func opcion3() {
 	var celsius float64
 	fmt.Print("Ingresa la temperatura en Celsius: ")
@@ -110,7 +108,7 @@ func opcion3() {
 	fmt.Printf("%.2f°C equivalen a %.2f°F\n", celsius, fahrenheit)
 }
 
-// Opción 4: Fahrenheit a Celsius
+
 func opcion4() {
 	var fahrenheit float64
 	fmt.Print("Ingresa la temperatura en Fahrenheit: ")
